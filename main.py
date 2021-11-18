@@ -29,15 +29,18 @@ pages = wcs.calc_pages(movie_code)
 print(pages)
 
 # 3. 리뷰 수집
-reviews = wcs.get_reviews(movie_code, pages, title)
-print(reviews)
-
-
+# wcs.get_reviews(movie_code, pages, title)
 
 
 #################
 # 2. 인공지능 분석 #
 #################
+
+
+
+
+
+
 
 ##################
 # 3. 분석결과 시각화 #
