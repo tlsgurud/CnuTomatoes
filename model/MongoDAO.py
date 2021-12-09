@@ -6,11 +6,11 @@ from pymongo import MongoClient
 
 # MongoDB Connection
 def conn_mongo():
-    # client = MongoClient('121.178.46.110', 1804)  # (IP address, Port)
+    # client = MongoClient('localhost', 27017)  # (IP address, Port)
     client = MongoClient(host= 'host',
                          port= 27017,
-                         username='uesr',
-                         password='password')
+                         username='user',
+                         password='passward')
     db = client['cnu']                      # Allocating 'local' DB
     collection = db.get_collection('movie')   # Allocating 'movie' Collection
     return collection
